@@ -1,0 +1,377 @@
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+/*بيشيل المسافات الديفولت */
+}
+.body-before-login i{
+    font-size: 30px;
+}
+body{
+    
+}
+header{
+    width: 100%;
+    height: 55px;
+    background-color:#b846fa;
+    color: white;
+    position: fixed;
+    z-index: 20;
+}
+
+.header-container{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon{
+ 
+    width: 30%;
+    padding-left: 40px;
+    
+}
+.icon i{
+    font-size: 28px;
+    margin-right: 5px;
+}
+.icon h2{
+    display: inline;
+}
+.heah_link{
+    width: 70%;
+    margin-right: 40px;
+    display: flex;
+    padding-left: 140px;
+    justify-content: flex-end; 
+    align-items: center; 
+    /* background-color: brown; */
+}
+
+.heah_link .befor-links {
+    width: 100px;
+    height: 40px;
+    margin-left: 10px;
+    text-decoration: none;
+    
+}
+.heah_link .serch-links {
+    width: 100px;
+    height: 40px;
+    margin-left: 10px;
+    text-decoration: none;
+    
+}
+.heah_link  .search-p{
+    font-size: 20px;
+
+}
+
+
+.a-login{
+    color: white;
+}
+.a-register{
+    color: black;
+}
+
+.heah_link button ,.heah_link .search-buuton{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 20px;
+
+}
+.log-out-btn{
+    background-color: #5a189a;
+}
+.log-out-btn:hover{
+    background-color:#240046;
+}
+.dash-btn{
+    background-color: #b846fa;
+}
+.dash-btn:hover{
+    background-color: rgb(217, 180, 252);
+}
+
+.heah_link .search-buuton{
+   /* background-color:#b846fa; */
+   color: white;
+}
+
+
+.btn1{
+  background-color: #7b2cbf;
+  border:1px solid white  ;
+}
+
+.up-div{
+    width: 100%;
+    height: 60%;
+    /* background-color: brown; */
+    position: relative;
+}
+.section-before-login{
+    position: absolute;
+    width: 800px;
+    height: 300px;
+    /* background-color: aqua; */
+    text-align: center;
+    padding: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.section-before-login h1{
+    padding-top: 20px;
+    font-size: 40px;
+}
+
+.section-before-login p{
+    padding: 20px 0px;
+    font-size: 25px;
+}
+.x{
+    width: 150px;
+    height: 50px;
+}
+.section-before-login button{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 50px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.section-before-login-leftbutton{
+    background-color: #7b2cbf;
+}
+.down-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 70px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.down-div .item{
+    width: 250px;
+    height: 250px;
+    background-color: #7b2cbf;
+    border-radius: 15px;
+    text-align: center;
+    padding: 40px 30px;
+}
+
+.item h2{
+    padding: 30px 0px;
+}
+.last-div{
+    /* margin-top: 20px ; */
+    height: 50px;
+    padding-top: 15px;
+    text-align: center;
+    width: 100%;
+    /* background-color: aqua; */
+    border: 1px gray solid;
+}
+
+
+/* //////////////////////////////// */
+
+.sec-login{
+    width: 90%;
+    height: 100vh;
+    margin: auto;    
+}
+
+
+.log-form{
+    width: 400px;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 5px 1px black; 
+}
+.log-content{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+.log-input{
+    padding-left: 20px;
+}
+.log-form label{
+    display: block;
+}
+
+.log-form i{
+    font-size: 30px;
+    padding-top: 20px;
+    color: blueviolet;
+}
+.log-form h2{
+    padding-bottom: 20px;
+}
+.log-form .p-login{
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+.log-form input ,.log-submit{
+    width: 350px;
+    height: 40px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+     border-radius: 10px;
+     border: 1px solid black;
+
+}
+.log-submit{
+    border: none;
+    background-color: blueviolet;
+    box-shadow:0px 2px 5px 1px black ;
+    font-size: 20px;
+}
+
+.log-form input::placeholder{
+    font-size: 20px;
+}
+.log-form  .pas-input::placeholder{
+    font-size: 30px;
+    
+}
+
+.p-toregister ,.p-tohome{
+    padding-top: 20px;
+   text-align: center;
+}
+.p-toregister a ,.p-tohome a{
+    text-decoration: none;
+}
+/* /////////////////////////////////// */
+
+
+.register{
+    position: relative;
+    height: 110vh;
+    width: 100%;
+    /* background-color: aqua; */
+}
+.register-container{
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    border: none;
+    border-radius: 10px;
+   top: 50%;
+   left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    box-shadow: 2px 2px 5px 1px black;
+    
+}
+.register-container i{
+    font-size: 30px;
+    padding-top: 20px;
+    color: blueviolet;
+
+}
+.register-container h2{
+    font-size: 30px;
+    padding-bottom:20px;
+}
+.register-container-meddilediv{
+    text-align: left;
+    padding-left: 20px;
+}
+label{
+    display: block;
+}
+.register-container-meddilediv input{
+    width: 350px;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.register-container-meddilediv  .pas-input::placeholder{
+    font-size: 30px;
+
+}
+.p-toregister ,.p-tohome{
+    padding-top: 20px;
+   text-align: center;
+}
+.log-submit{
+    border: none;
+    background-color: blueviolet;
+    box-shadow:0px 2px 5px 1px black ;
+    width: 350px;
+    height: 40px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+     border-radius: 10px;
+     border: 1px solid black;
+}
+.p-toregister a ,.p-tohome a{
+    text-decoration: none;
+}
+
+/* after login  */
+
+
+
+
+.after-login-dashbord-container{
+    width: 80%;
+    height: 130vh;
+    margin-left: 10%;
+    padding-top: 70px;
+}
+
+.after-login-dashbord-upperdiv{
+    width: 100%;
+    height: 40%;
+
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+}
+.after-login-dashbord-upperdiv-item{
+    padding: 40px;
+    border-radius: 10px;
+    background-color: orange;
+}
+.after-login-dashbord-upperdiv-item h2{
+    padding-top: 20px;
+}
+.after-login-dashbord-lowerdiv{
+    width: 100%;
+    margin-top: 5%;
+    background-color: red;
+        border-radius: 10px;
+}
+.after-login-dashbord-lowerdiv-div1{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
