@@ -1,46 +1,66 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="CSS/style.css">
-        <link rel="stylesheet" href="css/all.css">
-        
-    </head>
-    <body>
-      <header >
-        <div class="header-container">
-            <div class="icon">
-                <i class="fa-solid fa-book-open" ></i>                
-                <h2>LibraHub</h2>
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/all.css">
+</head>
 
-       
+<body>
+<header>
+    <div class="header-container">
+        <div class="icon">
+            <i class="fa-solid fa-book-open"></i>
+            <h2>LibraHub</h2>
         </div>
-     </header>
-      <section>
-            <div class="register">
-                <div class="register-container">
-                    <i class="fa-solid fa-book-open " ></i>      
-                    <h2>LibraHub</h2>
-                    <p>Create Account</p>
+    </div>
+</header>
 
-                    <div class="register-container-meddilediv">
-                        <label>Full Name</label>
-                        <input type="text" placeholder="Abo-Yasser">
-                        <label>Email</label>
-                        <input type="email" placeholder="Your@gmail.com">
-                        <label>password</label>
-                        <input class="pas-input" type="password" placeholder="........ " >
-                        <label>confirm password</label>
-                        <input class="pas-input" type="password" placeholder="........ ">
-                        <button class="log-submit">Create Account</button>
-             <p class="p-toregister">Already have an account? <a href="login.html">Login here</a></p>
-             <p class="p-tohome"><a href="index.html">Back to Home</a></p>
-                    </div>
-                </div>
-                
+<section>
+    <div class="register">
+        <div class="register-container">
+
+            <i class="fa-solid fa-book-open"></i>
+            <h2>LibraHub</h2>
+            <p>Create Account</p>
+
+            <div class="register-container-meddilediv">
+
+                <label>Full Name</label>
+                <input id="fullName" type="text" placeholder="Abo-Yasser">
+
+                <label>Email</label>
+                <input id="email" type="email" placeholder="Your@gmail.com">
+
+                <label>Password</label>
+                <input id="password" class="pas-input" type="password" placeholder="........">
+
+                <label>Confirm Password</label>
+                <input id="confirmPassword" class="pas-input" type="password" placeholder="........">
+
+                <label>Role</label>
+                <select id="role">
+                    <option value="Admin">Admin</option>
+                </select>
+
+                <button class="log-submit" type="button" onclick="register()">
+                    Create Account
+                </button>
+
+                <p class="p-toregister">
+                    Already have an account?
+                    <a href="login.html">Login here</a>
+                </p>
+
+                <p class="p-tohome">
+                    <a href="index.html">Back to Home</a>
+                </p>
+
             </div>
-  <!-- <div class="last-div">© 2025 LibraHub. All rights reserved.</div> -->
-      </section>
-      <script src="JS/script.js" ></script>
-    </body>
+        </div>
+    </div>
+</section>
+
+<script src="JS/script.js"></script>
+</body>
 </html>

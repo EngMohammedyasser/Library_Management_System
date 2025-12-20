@@ -1,47 +1,91 @@
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="CSS/style.css">
-        <link rel="stylesheet" href="css/all.css">
-        
-    </head>
-    <body>
-        <header >
-            <div class="header-container">
-                <div class="icon">
-                  <i class="fa-solid fa-book-open"></i>
-                    <h2>LibraHub</h2>
-                </div>
-          <div class="heah_link">
-            <p class="search-p">Admin Panal</p>
-            <a  href="#" class="serch-links a-login" ><button class=" search-buuton" style="background-color: #5a189a;" >Dashboard</button></a>
-            <a href="search.html" class="serch-links a-register"><button class="dash-btn search-buuton " >Search</button></a>
-            <a href="add.html" class="serch-links a-register"><button class="dash-btn search-buuton " >Add Book</button></a>
-            <a href="index.html" class="serch-links a-register"><button class="log-out-btn search-buuton">Log out <i class="fa-solid fa-right-from-bracket"></i></button></a>
-          </div>
-           
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>Admin Dashboard - LibraHub</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="icon">
+                <i class="fa-solid fa-book-open"></i>
+                <h2>LibraHub</h2>
             </div>
-         </header>
-      <section>
+            <div class="heah_link">
+                <p class="search-p">Admin Panel</p>
+                <a href="#" class="serch-links a-login">
+                    <button class="search-buuton" style="background-color: #5a189a;">Dashboard</button>
+                </a>
+                <a href="search.html" class="serch-links a-register">
+                    <button class="dash-btn search-buuton">Search</button>
+                </a>
+                <a href="add.html" class="serch-links a-register">
+                    <button class="dash-btn search-buuton">Add Book</button>
+                </a>
+                <a href="index.html" class="serch-links a-register">
+                    <button class="log-out-btn search-buuton">Log out <i class="fa-solid fa-right-from-bracket"></i></button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section>
         <div class="after-login-dashbord-container">
             <h2 class="after-login-dashbord-container-title">Admin Dashboard</h2>
+
+            <!-- Dashboard stats -->
             <div class="after-login-dashbord-upperdiv">
-                <div class="after-login-dashbord-upperdiv-item"><p>Total Books</p><h2>15</h2></div>
-                <div class="after-login-dashbord-upperdiv-item"><p>Available</p><h2>18</h2></div>
-                <div class="after-login-dashbord-upperdiv-item"><p>Borrowed</p><h2>19</h2></div>
-                <div class="after-login-dashbord-upperdiv-item"><p>Active Users</p><h2>25</h2></div>
-            </div>
-            <div class="after-login-dashbord-lowerdiv">
-                <div class="after-login-dashbord-lowerdiv-div1"><h2>Recent Borrowings</h2> <a href="borrow.html"><button class="request-btn"><i class="fa-solid fa-circle-plus"></i> Add Borrowing</button></a></div>
-                <div class="after-login-dashbord-lowerdiv-div2"></div>
-                <div class="after-login-dashbord-lowerdiv-div3"></div>
-                <div class="after-login-dashbord-lowerdiv-div4"></div>
-                
+                <div class="after-login-dashbord-upperdiv-item">
+                    <p>Total Books</p>
+                    <h2 id="total-books">0</h2>
+                </div>
+                <div class="after-login-dashbord-upperdiv-item">
+                    <p>Available</p>
+                    <h2 id="available-books">0</h2>
+                </div>
+                <div class="after-login-dashbord-upperdiv-item">
+                    <p>Borrowed</p>
+                    <h2 id="borrowed-books">0</h2>
+                </div>
+                <div class="after-login-dashbord-upperdiv-item">
+                    <p>Active Users</p>
+                    <h2 id="active-users">0</h2>
+                </div>
             </div>
 
+            <!-- Recent Borrowings -->
+            <div class="after-login-dashbord-lowerdiv">
+                <div class="after-login-dashbord-lowerdiv-div1">
+                    <h2>Recent Borrowings</h2>
+                    <a href="borrow.html">
+                        <button class="request-btn">
+                            <i class="fa-solid fa-circle-plus"></i> Add Borrowing
+                        </button>
+                    </a>
+                </div>
+                <div class="after-login-dashbord-lowerdiv-div2">
+                    <table id="recent-borrowings" border="1" style="width:100%; border-collapse: collapse; margin-top: 10px;">
+                        <thead>
+                            <tr>
+                                <th>Book Title</th>
+                                <th>Borrower</th>
+                                <th>Date Borrowed</th>
+                                <th>Return Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Recent borrowings will be dynamically added here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
-  <div class="last-div">© 2025 LibraHub. All rights reserved.</div>
-      </section>
-      <script src="JS/script.js" ></script>
-    </body>
+
+        <div class="last-div">© 2025 LibraHub. All rights reserved.</div>
+    </section>
+
+    <script src="JS/dashboard.js"></script>
+</body>
 </html>

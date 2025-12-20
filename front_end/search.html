@@ -1,49 +1,55 @@
-<html>
-    <head>
-        <meta charset="UTF_8">
-        <link rel="stylesheet" href="CSS/all.css">
-        <link rel="stylesheet" href="CSS/style.css">
-    </head>
-    <body>
-     <header >
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Books - LibraHub</title>
+    <link rel="stylesheet" href="CSS/all.css">
+    <link rel="stylesheet" href="CSS/style.css">
+  
+</head>
+<body>
+    <header>
         <div class="header-container">
             <div class="icon">
-              <i class="fa-solid fa-book-open"></i>
+                <i class="fa-solid fa-book-open"></i>
                 <h2>LibraHub</h2>
             </div>
-      <div class="heah_link">
-        <p class="search-p">Admin Panal</p>
-        <a  href="dashbord.html" class="serch-links a-login" ><button class="dash-btn search-buuton" >Dash Bord</button></a>
-        
-        <a href="#" class="serch-links a-register"><button class=" search-buuton " style="background-color: #5a189a;">Search</button></a>
-        <a  href="add.html" class="serch-links a-login" ><button class="dash-btn search-buuton" >Add Book</button></a>
-        <a href="index.html" class="serch-links a-register"><button class="log-out-btn search-buuton">Log out <i class="fa-solid fa-right-from-bracket"></i></button></a>
-      </div>
-       
+            <div class="heah_link">
+                <p class="search-p">Admin Panel</p>
+                <a href="dashbord.html" class="serch-links a-login">
+                    <button class="dash-btn search-buuton">Dashboard</button>
+                </a>
+                <a href="#" class="serch-links a-register">
+                    <button class="search-buuton" style="background-color: #5a189a;">Search</button>
+                </a>
+                <a href="add.html" class="serch-links a-login">
+                    <button class="dash-btn search-buuton">Add Book</button>
+                </a>
+                <a href="index.html" class="serch-links a-register">
+                    <button class="log-out-btn search-buuton">
+                        Log out <i class="fa-solid fa-right-from-bracket"></i>
+                    </button>
+                </a>
+            </div>
         </div>
-     </header>
-     <section class="search-form">
-       <div class="search-conteaner">
+    </header>
 
-        <div class="search-upper">
-         <label class="search-upper-labal">Search Book</label>
-         <input type="text" placeholder="search by tital,author,or ISBN..." class="search-upper-input">
-         <button class="search-upper-button">search</button>
-        </div><!-- search-upper -->
+    <section class="search-form">
+        <div class="search-conteaner">
+            <!-- Search Input -->
+            <div class="search-upper">
+                <label class="search-upper-labal">Search by Title or Author</label>
+                <input type="text" id="search-input" placeholder="Type title or author" class="search-upper-input">
+                <button id="search-button" class="search-upper-button">Search</button>
+            </div>
 
-        <div class="search-bottom">
-          <div class="search-bottom-item"></div>
-          <div class="search-bottom-item"></div>
-          <div class="search-bottom-item"></div>
-          <div class="search-bottom-item"></div>
-        </div><!-- search-bottom -->
-       </div>
-     </section>
+            <!-- Search Results -->
+            <div class="search-bottom" id="search-results">
+                <!-- All books will be rendered here as .search-bottom-item cards -->
+            </div>
+        </div>
+    </section>
 
-
-
-
-
-        <script ></script>
-    </body>
+    <script src="JS/search.js"></script>
+</body>
 </html>
