@@ -89,6 +89,7 @@ namespace Library2.Controllers
             {
                 message = "Login successful",
                 userId = user.UserId,
+                userName = user.FullName,  // Frontend needs this for display
                 email = user.Email,
                 role = user.Role  // Frontend needs this to show "Admin Dashboard" vs "Home Page"
             });
