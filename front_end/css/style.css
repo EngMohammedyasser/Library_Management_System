@@ -251,8 +251,11 @@ header{
     font-size: 20px;
 }
 .log-form  .pas-input::placeholder{
-    font-size: 30px;
+    font-size: 20px;
     
+}
+ema::placeholder{
+    font-size: 18px;
 }
 
 .p-toregister ,.p-tohome{
