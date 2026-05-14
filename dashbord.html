@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="CSS/all.css">
     <title>Admin Dashboard - LibraHub</title>
 </head>
 <body>
@@ -24,7 +24,7 @@
                 <a href="add.html" class="serch-links a-register">
                     <button class="dash-btn search-buuton">Add Book</button>
                 </a>
-                 <a href="addUser.html" class="serch-links a-register">
+                <a href="addUser.html" class="serch-links a-register">
                     <button class="dash-btn search-buuton">Add User</button>
                 </a>
                 <a href="index.html" class="serch-links a-register">
@@ -38,7 +38,6 @@
         <div class="after-login-dashbord-container">
             <h2 class="after-login-dashbord-container-title">Admin Dashboard</h2>
 
-            <!-- Dashboard stats -->
             <div class="after-login-dashbord-upperdiv">
                 <div class="after-login-dashbord-upperdiv-item">
                     <p>Total Books</p>
@@ -58,7 +57,6 @@
                 </div>
             </div>
 
-            <!-- Recent Borrowings -->
             <div class="after-login-dashbord-lowerdiv">
                 <div class="after-login-dashbord-lowerdiv-div1">
                     <h2>Recent Borrowings</h2>
@@ -69,7 +67,7 @@
                     </a>
                 </div>
                 <div class="after-login-dashbord-lowerdiv-div2">
-                    <table id="recent-borrowings" border="1" style="width:100%; border-collapse: collapse; margin-top: 10px;">
+                    <table id="recent-borrowings" border="1" style="width:100%; border-collapse:collapse; margin-top:10px;">
                         <thead>
                             <tr>
                                 <th>Book Title</th>
@@ -78,17 +76,15 @@
                                 <th>Return Date</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <!-- Recent borrowings will be dynamically added here -->
-                        </tbody>
+                        <tbody></tbody>
                     </table>
                 </div>
             </div>
         </div>
-
         <div class="last-div">© 2025 LibraHub. All rights reserved.</div>
     </section>
 
+    <script src="JS/db.js"></script>
     <script src="JS/dashboard.js"></script>
 </body>
 </html>

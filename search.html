@@ -5,7 +5,6 @@
     <title>Search Books - LibraHub</title>
     <link rel="stylesheet" href="CSS/all.css">
     <link rel="stylesheet" href="CSS/style.css">
-  
 </head>
 <body>
     <header>
@@ -29,9 +28,7 @@
                     <button class="dash-btn search-buuton">Add User</button>
                 </a>
                 <a href="index.html" class="serch-links a-register">
-                    <button class="log-out-btn search-buuton">
-                        Log out <i class="fa-solid fa-right-from-bracket"></i>
-                    </button>
+                    <button class="log-out-btn search-buuton">Log out <i class="fa-solid fa-right-from-bracket"></i></button>
                 </a>
             </div>
         </div>
@@ -39,20 +36,16 @@
 
     <section class="search-form">
         <div class="search-conteaner">
-            <!-- Search Input -->
             <div class="search-upper">
                 <label class="search-upper-labal">Search by Title or Author</label>
                 <input type="text" id="search-input" placeholder="Type title or author" class="search-upper-input">
                 <button id="search-button" class="search-upper-button">Search</button>
             </div>
-
-            <!-- Search Results -->
-            <div class="search-bottom" id="search-results">
-                <!-- All books will be rendered here as .search-bottom-item cards -->
-            </div>
+            <div class="search-bottom" id="search-results"></div>
         </div>
     </section>
 
+    <script src="JS/db.js"></script>
     <script src="JS/search.js"></script>
 </body>
 </html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/all.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>LibraHub - Add User</title>
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <div class="icon">
+            <i class="fa-solid fa-book-open"></i>
+            <h2>LibraHub</h2>
+        </div>
+        <div class="heah_link">
+            <p class="search-p">Admin Panel</p>
+            <a href="dashbord.html" class="serch-links a-login"><button class="dash-btn search-buuton">Dashboard</button></a>
+            <a href="search.html" class="serch-links a-login"><button class="dash-btn search-buuton">Search</button></a>
+            <a href="add.html" class="serch-links a-register"><button class="search-buuton">Add Book</button></a>
+            <a href="#" class="serch-links a-register"><button class="search-buuton" style="background-color:#5a189a;">Add User</button></a>
+            <a href="index.html" class="serch-links a-register"><button class="log-out-btn search-buuton">Log out <i class="fa-solid fa-right-from-bracket"></i></button></a>
+        </div>
+    </div>
+</header>
+
+<section class="sec-login">
+    <div class="log-form">
+        <div class="log-content">
+            <i class="fa-solid fa-book-open"></i>
+            <h2>LibraHub</h2>
+            <p class="p-login">Add User</p>
+        </div>
+        <div class="log-input">
+            <label>User Name</label>
+            <input type="text" id="userName" placeholder="username...">
+
+            <label>Email</label>
+            <input class="pas-input" type="email" id="userEmail" placeholder="email...">
+
+            <button id="submitBtn" class="log-submit">Add User</button>
+            <p class="p-tohome"><a href="dashbord.html">Back to Home</a></p>
+        </div>
+    </div>
+</section>
+
+<script src="JS/db.js"></script>
+<script>
+    document.getElementById('submitBtn').addEventListener('click', () => {
+        const name  = document.getElementById('userName').value.trim();
+        const email = document.getElementById('userEmail').value.trim();
+
+        if (!name || !email) {
+            alert("Please fill in both name and email.");
+            return;
+        }
+
+        DB.addMember({ name, email });
+        alert("User added successfully!");
+        document.getElementById('userName').value  = '';
+        document.getElementById('userEmail').value = '';
+    });
+</script>
+</body>
+</html>

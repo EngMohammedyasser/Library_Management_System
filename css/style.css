@@ -44,10 +44,11 @@ header{
     width: 70%;
     margin-right: 40px;
     display: flex;
-    padding-left: 140px;
+    padding-left: 0;
     justify-content: flex-end; 
-    align-items: center; 
-    /* background-color: brown; */
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 6px;
 }
 
 .heah_link .befor-links {
@@ -335,8 +336,6 @@ label{
 }
 
 /* after login  */
-
-
 
 
 .after-login-dashbord-container{
@@ -933,4 +932,28 @@ select {
     border-radius: 4px;
     margin-bottom: 10px;
     display: block;
+}
+
+
+/* ── Header Fix ── */
+.heah_link button,
+.heah_link .search-buuton,
+.Dash-buuton {
+    font-size: 13px !important;
+    padding: 0 10px;
+    margin-left: 0;
+    white-space: nowrap;
+}
+ 
+.heah_link .serch-links,
+.heah_link .befor-links {
+    width: auto;
+    height: 35px;
+    margin-left: 0;
+}
+ 
+.heah_link .search-p {
+    white-space: nowrap;
+    font-size: 14px;
+    margin-right: 6px;
 }
