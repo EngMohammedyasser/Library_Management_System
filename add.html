@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>LibraHub - Add Book</title>
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <div class="icon">
+            <i class="fa-solid fa-book-open"></i>
+            <h2>LibraHub</h2>
+        </div>
+        <div class="heah_link">
+            <p class="search-p">Admin Panel</p>
+            <a href="dashbord.html" class="serch-links a-login"><button class="dash-btn search-buuton">Dashboard</button></a>
+            <a href="search.html" class="serch-links a-login"><button class="dash-btn search-buuton">Search</button></a>
+            <a href="#" class="serch-links a-register"><button class="search-buuton" style="background-color:#5a189a;">Add Book</button></a>
+            <a href="addUser.html" class="serch-links a-register"><button class="search-buuton">Add User</button></a>
+            <a href="index.html" class="serch-links a-register"><button class="log-out-btn search-buuton">Log out <i class="fa-solid fa-right-from-bracket"></i></button></a>
+        </div>
+    </div>
+</header>
+
+<section class="add-form">
+    <div class="add-card">
+        <div class="add-upper">
+            <p class="add-tital"><i class="fa-solid fa-circle-plus"></i> Add New Book</p>
+            <a href="dashbord.html" class="add-backtohome"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+        </div>
+        <div class="add-conteaner">
+            <p class="book-title">Book Title</p>
+            <input type="text" id="txtTitle" placeholder="e.g. The Great Gatsby" class="booktitle-input">
+
+            <div class="author-div">
+                <div class="x">
+                    <p class="author">Author</p>
+                    <input type="text" id="txtAuthor" placeholder="F. Scott Fitzgerald">
+                </div>
+            </div>
+
+            <div class="author-div">
+                <div class="x">
+                    <p class="author">Total Copies</p>
+                    <input type="number" id="numCopies" min="1" value="1">
+                </div>
+                <div class="x">
+                    <p class="author">Cover Image URL (Optional)</p>
+                    <input type="url" id="txtUrl" placeholder="https://example.com/image.jpg">
+                </div>
+            </div>
+
+            <button class="AddBook-btn" id="btnAddBook">Add Book to collection</button>
+            <button class="canceladd-btn" onclick="window.location.href='dashbord.html'">Cancel</button>
+        </div>
+    </div>
+</section>
+
+<script src="JS/db.js"></script>
+<script>
+    document.getElementById('btnAddBook').addEventListener('click', () => {
+        const title    = document.getElementById('txtTitle').value.trim();
+        const author   = document.getElementById('txtAuthor').value.trim();
+        const copies   = document.getElementById('numCopies').value;
+        const imageUrl = document.getElementById('txtUrl').value.trim();
+
+        if (!title || !author || !copies) {
+            alert("Please fill in Title, Author, and Total Copies.");
+            return;
+        }
+
+        DB.addBook({ title, author, coverImageUrl: imageUrl, availableCopies: copies });
+        alert("Book added successfully!");
+        window.location.href = 'dashbord.html';
+    });
+</script>
+</body>
+</html>
